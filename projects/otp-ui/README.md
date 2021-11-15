@@ -21,9 +21,8 @@ imports: [
     otp_count : 5
   }
 #### custome_otp_config
-![Screenshot](formateobj.png)
 
-
+![alt text](https://github.com/sivasankula/OtpWorks/blob/master/formateobj.PNG?raw=true)
 
 ## Output Parameters
 otpSent: object -> Returns Entered OTP value in `object` format.
@@ -37,9 +36,4 @@ otpSent: object -> Returns Entered OTP value in `object` format.
 
 ### Otput Example
 
-![Screenshot](otp-ui.png)
-
-
-## Key Words
-
-[ otp-ui, otp-verify, one-time-password, ng-otp, ng-otp-ui, ng-otp-input, angular-otp, otp-angular]
+![alt text](https://github.com/sivasankula/OtpWorks/blob/master/otp-ui.PNG?raw=true)

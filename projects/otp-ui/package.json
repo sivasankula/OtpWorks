@@ -1,6 +1,6 @@
 {
   "name": "otp-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
@@ -13,5 +13,7 @@
     "name": "Pt1768-Pt1837",
     "url": "https://github.com/sivasankula"
   },
-  "keywords": ["otp-UI","otp-verify","verifyotp","one time password","otp verification"]
+  "keywords": ["otp-UI","otp-verify","verifyotp","one time password","otp verification" ,"otp-ui", 
+    "otp-verify", "one-time-password", "ng-otp", "ng-otp-ui", "ng-otp-input", 
+    "angular-otp", "otp-angular"]
 }
