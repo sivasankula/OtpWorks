@@ -39,7 +39,6 @@ export class OtpUiComponent implements OnInit {
     return `crtl${index}`;
   }
   sublogin() {
-    console.log(this.loginForm.value)
     this.otpSent.emit(this.loginForm.value)
   }
   
