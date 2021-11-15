@@ -15,6 +15,16 @@ export class NextfocusDirective {
    const { type } = target;
    let { nextElementSibling } = target;
     let { previousElementSibling } = prvtarget
+
+    if(keyboardEvent.key === 'ArrowLeft'){
+      try{
+        (previousElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+      return;
+      }
+      catch{
+        return
+      }
+    }
    
     if (!target || target.maxLength !== target.value.length) {
       if(keyboardEvent.key === 'Backspace'){
@@ -59,11 +69,7 @@ export class NextfocusDirective {
 
     keyboardEvent.preventDefault();
 
-   
-    
-    
     while (nextElementSibling) {
-
 
      if(keyboardEvent.key === 'ArrowRight'){
        try{
@@ -81,6 +87,7 @@ export class NextfocusDirective {
         return;
        }
       catch{
+        console.log("catch")
         return;
       }
      }

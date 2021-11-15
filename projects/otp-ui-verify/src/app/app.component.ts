@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'otp-ui-verify';
   otp = {
-    otp_title : 'Enter OTP',
+    otp_title : 'Enter the OTP',
     otp_subtitle : 'OTP will be sent to your registered mobile number, please verify...',
-    otp_button_label : 'Verify OTP',
-    otp_count : 6
+    otp_button_label : 'Validate OTP',
+    otp_count : 5
   }
   recieveOTP(event:any){
     console.log(event)

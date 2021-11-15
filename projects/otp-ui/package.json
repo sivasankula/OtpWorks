@@ -7,5 +7,11 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "author": {
+    "email": "sindhureddy4696@gmail.com",
+    "name": "Pt1768-Pt1837",
+    "url": "https://github.com/sivasankula"
+  },
+  "keywords": ["otp-UI","otp-verify","verifyotp","one time password","otp verification"]
 }
