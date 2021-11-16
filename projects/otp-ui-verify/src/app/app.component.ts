@@ -11,7 +11,9 @@ export class AppComponent {
     otp_title : 'Enter the OTP',
     otp_subtitle : 'OTP will be sent to your registered mobile number, please verify...',
     otp_button_label : 'Validate OTP',
-    otp_count : 5
+    otp_count : 5,
+    otp_color:'',
+    width:'40rem'
   }
   recieveOTP(event:any){
     console.log(event)
