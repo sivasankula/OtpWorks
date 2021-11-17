@@ -35,9 +35,7 @@ export class OtpUiComponent implements OnInit {
     for(let i=0; i<this.otp?.otp_count;i++){
       
       this.arr.push(this.getFormConntrol(i));
-      this.loginForm.addControl(this.getFormConntrol(i), new FormControl
-      //('',Validators.required)
-      )
+      this.loginForm.addControl(this.getFormConntrol(i), new FormControl('',Validators.required))
     }
   }
   
