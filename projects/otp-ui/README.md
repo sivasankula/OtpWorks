@@ -22,9 +22,6 @@ imports: [
     otp_button_color:'green',
     otp_card_width:'40rem'
   }
-#### custome_otp_config
-
-![image](https://github.com/sivasankula/OtpWorks/blob/a1f944101a8b13dacade049030b456d2d72c5bed/projects/otp-ui/otp1.PNG?raw=true)
 
 ## Output Parameters
 otpSent: object -> Returns Entered OTP value in `object` format.
