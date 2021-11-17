@@ -13,7 +13,6 @@
     "name": "Pt1768-Pt1837",
     "url": "https://github.com/sivasankula"
   },
-  "keywords": ["otp-UI","otp-verify","verifyotp","one time password","otp verification" ,"otp-ui", 
-    "otp-verify", "one-time-password", "ng-otp", "ng-otp-ui", "ng-otp-input", 
-    "angular-otp", "otp-angular"]
+  "keywords": ["otp-UI","otp-verify","verifyotp","one time password","otp verification" ,
+    "ng-otp", "ng-otp-ui", "ng-otp-input", "angular-otp", "otp-angular"]
 }

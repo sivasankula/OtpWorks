@@ -14,8 +14,8 @@ export class OtpUiComponent implements OnInit {
     otp_subtitle : '',
     otp_button_label :'',
     otp_count : 0,
-    otp_color:'',
-    width:''
+    otp_button_color:'',
+    otp_card_width:''
   }
   color:any;
   width:any;
@@ -28,14 +28,16 @@ export class OtpUiComponent implements OnInit {
   }
   
   ngOnInit(){
-    this.color=this.otp.otp_color;
-  this.width=this.otp.width;
+    this.color=this.otp.otp_button_color;
+  this.width=this.otp.otp_card_width;
     this.arr.pop()
     this.loginForm = new FormGroup({  })
     for(let i=0; i<this.otp?.otp_count;i++){
       
       this.arr.push(this.getFormConntrol(i));
-      this.loginForm.addControl(this.getFormConntrol(i), new FormControl('',Validators.required))
+      this.loginForm.addControl(this.getFormConntrol(i), new FormControl
+      //('',Validators.required)
+      )
     }
   }
   

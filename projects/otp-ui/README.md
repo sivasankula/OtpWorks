@@ -18,11 +18,13 @@ imports: [
     otp_title : 'Enter OTP',
     otp_subtitle : 'OTP will be sent to your registered mobile number, Please verify',
     otp_button_label : 'Verify OTP',
-    otp_count : 5
+    otp_count : 5,
+    otp_button_color:'green',
+    otp_card_width:'40rem'
   }
 #### custome_otp_config
 
-![alt text](https://github.com/sivasankula/OtpWorks/blob/master/formateobj.PNG?raw=true)
+![image](https://github.com/sivasankula/OtpWorks/blob/master/formateobj.png?raw=true)
 
 ## Output Parameters
 otpSent: object -> Returns Entered OTP value in `object` format.
