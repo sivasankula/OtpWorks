@@ -24,7 +24,7 @@ imports: [\
   }
 
 ## Output Parameters
-otpSent: object -> Returns Entered OTP value in `object` format.
+otpSent: object -> Returns Entered values in `object` format.
 
 `{crtl0: '9', crtl1: '3', crtl2: '4', crtl3: '5', crtl4: '6'}`
 
