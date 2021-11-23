@@ -15,7 +15,7 @@ export class AppComponent {
     otp_button_color :'',
     otp_card_width:'40rem'
   }
-  recieveOTP(event:any){
+  receiveOTP(event:any){
     console.log(event)
   }
 }
