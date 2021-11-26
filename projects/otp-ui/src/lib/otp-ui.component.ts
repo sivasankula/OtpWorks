@@ -15,10 +15,14 @@ export class OtpUiComponent implements OnInit {
     otp_button_label :'',
     otp_count : 0,
     otp_button_color:'',
-    otp_card_width:''
+    otp_card_width:'',
+    otp_bg_color:'',
+    otp_btn_text_color:''
   }
   color:any;
   width:any;
+  txt_color:any;
+  bg_color:any;
   @Output() otpSent : EventEmitter<any> = new EventEmitter;
 
   loginForm!: FormGroup;
@@ -29,7 +33,9 @@ export class OtpUiComponent implements OnInit {
   
   ngOnInit(){
     this.color=this.otp.otp_button_color;
-  this.width=this.otp.otp_card_width;
+    this.width=this.otp.otp_card_width;
+    this.bg_color=this.otp.otp_bg_color;
+    this.txt_color=this.otp.otp_btn_text_color;
     this.arr.pop()
     this.loginForm = new FormGroup({  })
     for(let i=0; i<this.otp?.otp_count;i++){
@@ -51,5 +57,11 @@ export class OtpUiComponent implements OnInit {
 }
 changeWidth():string{
 return this.width;
+}
+changeBgColor(){
+  return this.bg_color;
+}
+changeColor(){
+return this.txt_color;
 }
 }

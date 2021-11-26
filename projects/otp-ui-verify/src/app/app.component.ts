@@ -13,7 +13,9 @@ export class AppComponent {
     otp_button_label : 'Validate OTP',
     otp_count : 5,
     otp_button_color :'',
-    otp_card_width:'40rem'
+    otp_card_width:'40rem',
+    otp_bg_color:'',
+    otp_btn_text_color:''
   }
   receiveOTP(event:any){
     console.log(event)

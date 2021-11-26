@@ -17,12 +17,15 @@
     padding-left: 2%;
     padding: 2%;
 }
-
+.card-body {
+    background-color: #dedeec;
+}
 .btn{
-    width: 80%;
+    width: 60%;
     background-color: #673AB7;
     color:white;
-    
+    font-size: larger;
+    font-weight: 500;
 }
 
 .btncls{
