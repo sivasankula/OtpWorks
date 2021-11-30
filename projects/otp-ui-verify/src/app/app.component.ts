@@ -10,21 +10,19 @@ export class AppComponent {
   otp = {
     
     otp_subtitle : 'OTP will be sent to your registered mobile number, Please verify',
-    buttonText : 'Validate OTP...',
+    buttonText : 'Validate OTP',
     length : 5,
     styles :{
       cardWidth:"50%",
       backgroundColor:'red',
-      buttonColor:'pink'
+      buttonColor:'red',
+      txt_color:'red',
+      head_color:'',
+      sub_head_color:'red'
     }
     
   }
-  otp_styles ={
-    otp_button_color :'red',
-    otp_card_width:'40rem',
-    otp_bg_color:'yellow',
-    otp_btn_text_color:''
-  }
+
   receiveOTP(event:any){
     console.log(event)
   }
