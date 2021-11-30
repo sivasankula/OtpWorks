@@ -7,14 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   otp = {   
+    otp_title:'',
     otp_subtitle : 'OTP will be sent to your registered mobile number, Please verify',
     buttonText : 'Validate OTP',
-    length : '',
+    length : '5',
     styles :{
-      cardWidth:"20%",
+      cardWidth:'',
       backgroundColor:'',
       buttonColor:'',
       buttonTextColor:'',
+      head_color:'',
       sub_head_color:''
     }  
   }
