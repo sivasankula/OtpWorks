@@ -15,7 +15,7 @@ export class AppComponent {
       backgroundColor:'',
       buttonColor:'',
       buttonTextColor:'',
-      sub_head_color:'orange'
+      sub_head_color:''
     }  
   }
 
