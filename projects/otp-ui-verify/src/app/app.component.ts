@@ -14,11 +14,12 @@ export class AppComponent {
     length : 5,
     styles :{
       cardWidth:"50%",
-      backgroundColor:'red',
-      buttonColor:'red',
-      txt_color:'red',
-      head_color:'',
-      sub_head_color:'red'
+      backgroundColor:'white',
+      buttonColor:'green',
+      buttonTextColor:"blue",
+      // txt_color:'red',
+      head_color:'blue',
+      // sub_head_color:'red'
     }
     
   }

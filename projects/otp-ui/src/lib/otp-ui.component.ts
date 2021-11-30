@@ -20,7 +20,7 @@ export class OtpUiComponent implements OnInit {
   //styles
   backgroundColor: any;
   buttonColor: any;
-  txt_color: any;
+  buttonTextColor: any;
   head_color: any;
   sub_head_color: any
   cardWidth: any;
@@ -40,10 +40,10 @@ export class OtpUiComponent implements OnInit {
     this.buttonText = (this.otp.buttonText) ? this.otp.buttonText : "Validate OTP";
     this.length = (this.otp?.length < 4) ? 4 : this.otp.length;
     //styles initialisations
-    this.backgroundColor = (this.otp.backgroundColor)?this.otp.backgroundColor:'#D3D3D3'
-    this.buttonColor = (this.otp.buttonColor) ? this.otp.buttonColor : '#673AB7'
+    this.backgroundColor = this.otp?.styles.backgroundColor
+    this.buttonColor = this.otp?.styles.buttonColor
     this.cardWidth = this.otp?.styles?.cardWidth;
-    this.txt_color = this.otp?.styles?.otp_btn_text_color;
+    this.buttonTextColor = this.otp?.styles?.buttonTextColor;
     this.head_color = this.otp?.styles?.head_color;
     this.sub_head_color = this.otp?.styles?.sub_head_color;
     this.loginForm = new FormGroup({})
