@@ -38,11 +38,10 @@ export class OtpUiComponent implements OnInit {
     this.otp_title = (this.otp.otp_title) ? this.otp.otp_title : "Enter the OTP";
     this.otp_subtitle = (this.otp.otp_subtitle) ? this.otp.otp_subtitle : "OTP will be sent to your registered mobile number, Please verify";
     this.buttonText = (this.otp.buttonText) ? this.otp.buttonText : "Validate OTP";
-    this.length = (this.otp?.length < 4) ? 4 : this.otp.length;
-    //styles initialisations
-    this.backgroundColor = this.otp?.styles.backgroundColor
-    this.buttonColor = this.otp?.styles.buttonColor
-    this.cardWidth = this.otp?.styles?.cardWidth;
+    this.length = (this.otp?.length > 3) ? this.otp.length : 4;
+    this.backgroundColor = this.otp?.styles?.backgroundColor;
+    this.buttonColor = this.otp?.styles?.buttonColor;
+    this.cardWidth = (this.otp?.styles?.cardWidth > '40%') ? this.otp?.styles?.cardWidth: '50%';
     this.buttonTextColor = this.otp?.styles?.buttonTextColor;
     this.head_color = this.otp?.styles?.head_color;
     this.sub_head_color = this.otp?.styles?.sub_head_color;

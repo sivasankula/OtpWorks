@@ -6,22 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'otp-ui-verify';
-  otp = {
-    
+  otp = {   
     otp_subtitle : 'OTP will be sent to your registered mobile number, Please verify',
     buttonText : 'Validate OTP',
-    length : 5,
+    length : '',
     styles :{
-      cardWidth:"50%",
-      backgroundColor:'white',
-      buttonColor:'green',
-      buttonTextColor:"blue",
-      // txt_color:'red',
-      head_color:'blue',
-      // sub_head_color:'red'
-    }
-    
+      cardWidth:"20%",
+      backgroundColor:'',
+      buttonColor:'',
+      buttonTextColor:'',
+      sub_head_color:'orange'
+    }  
   }
 
   receiveOTP(event:any){

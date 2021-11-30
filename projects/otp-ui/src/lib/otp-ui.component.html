@@ -4,7 +4,7 @@
   <div class="card" [style.width]="cardWidth">
     <div class="card-body" [style.backgroundColor]="backgroundColor">
       <h5 class="card-title d-flex justify-content-center" [style.color]="head_color">{{otp_title}}</h5>
-      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center" [style.color]="head_color">{{otp_subtitle}}</h6>
+      <h6 class="d-flex justify-content-center" [style.color]="sub_head_color">{{otp_subtitle}}</h6>
       <form [formGroup]="loginForm" (ngSubmit)="sublogin()">
         <div class="inputDiv d-flex justify-content-center">
           <ng-container *ngFor="let item of arr;" class="inloop">
