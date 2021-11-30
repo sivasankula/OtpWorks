@@ -25,6 +25,15 @@ export class NextfocusDirective {
         return
       }
     }
+    if(keyboardEvent.key === 'Tab'){
+      try{
+        (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
+      return;
+      }
+      catch{
+        return
+      }
+    }
    
     if (!target || target.maxLength !== target.value.length) {
       if(keyboardEvent.key === 'Backspace'){
@@ -70,8 +79,7 @@ export class NextfocusDirective {
     keyboardEvent.preventDefault();
 
     while (nextElementSibling) {
-
-     if(keyboardEvent.key === 'ArrowRight'){
+     if(keyboardEvent.key === 'ArrowRight' || keyboardEvent.key === 'Tab'){
        try{
         (nextElementSibling as HTMLInputElement | HTMLTextAreaElement).focus();
         return;

@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div class="d-flex justify-content-center">
-  <div class="card" [style.width]="changeWidth()">
-    <div class="card-body" [style.backgroundColor]="changeBgColor()">
-      <h5 class="card-title d-flex justify-content-center">{{otp?.otp_title}}</h5>
-      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center">{{otp?.otp_subtitle}}</h6>
+  <div class="card" [style.width]="cardWidth">
+    <div class="card-body" [style.backgroundColor]="backgroundColor">
+      <h5 class="card-title d-flex justify-content-center">{{otp_title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center">{{otp_subtitle}}</h6>
       <form [formGroup]="loginForm" (ngSubmit)="sublogin()">
         <div class="inputDiv d-flex justify-content-center">
           <ng-container *ngFor="let item of arr;" class="inloop">
@@ -13,7 +13,7 @@
 
         </div>
         <div class="btncls d-flex justify-content-center">
-          <button type="submit" class="btn" [style.background-color]="changeBackground()" [style.color]="changeColor()" [disabled]=loginForm.invalid>{{otp.otp_button_label}}</button>
+          <button type="submit" class="btn" [style.background-color]="buttonColor" [disabled]=loginForm.invalid>{{buttonText}}</button>
       </div> 
       </form>
       

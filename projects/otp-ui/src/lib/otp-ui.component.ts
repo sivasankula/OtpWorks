@@ -9,37 +9,49 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class OtpUiComponent implements OnInit {
 
   @Input()
-  otp = {
-    otp_title : '',
-    otp_subtitle : '',
-    otp_button_label :'',
-    otp_count : 0,
-    otp_button_color:'',
-    otp_card_width:'',
-    otp_bg_color:'',
-    otp_btn_text_color:''
-  }
-  color:any;
-  width:any;
-  txt_color:any;
-  bg_color:any;
+  otp?:any
+    
+
+//mandatary
+otp_title:any;
+otp_subtitle:any;
+length:any;
+buttonText:any;
+
+//styles
+backgroundColor:any;
+buttonColor:any;
+txt_color:any;
+head_color:any;
+sub_head_color:any
+cardWidth:any;
+  
+  
+
+
+ 
+
   @Output() otpSent : EventEmitter<any> = new EventEmitter;
 
   loginForm!: FormGroup;
 
-  arr:any = [0]
+  arr:any = []
   constructor() {
   }
   
   ngOnInit(){
-    this.color=this.otp.otp_button_color;
-    this.width=this.otp.otp_card_width;
-    this.bg_color=this.otp.otp_bg_color;
-    this.txt_color=this.otp.otp_btn_text_color;
-    this.arr.pop()
+    //mandatary initialisation
+    this.otp_title = (this.otp.otp_title) ? this.otp.otp_title:"Enter the OTP";
+    this.otp_subtitle = (this.otp.otp_subtitle) ? this.otp.otp_subtitle : "OTP will be sent to your registered mobile number, Please verify";
+    this.buttonText = (this.otp.buttonText) ? this.otp.buttonText : "Validate OTP";
+    this.length = (this.otp?.length < 4) ? 4 : this.otp.length;
+    //styles inistilisations
+    this.backgroundColor = this.otp?.backgroundColor 
+    this.buttonColor = (this.otp.buttonColor) ? this.otp.buttonColor : '#673AB7'
+    this.cardWidth = this.otp?.styles?.cardWidth;
+    this.txt_color=this.otp?.styles?.otp_btn_text_color;
     this.loginForm = new FormGroup({  })
-    for(let i=0; i<this.otp?.otp_count;i++){
-      
+    for(let i=0; i<this.length;i++){
       this.arr.push(this.getFormConntrol(i));
       this.loginForm.addControl(this.getFormConntrol(i), new FormControl('',Validators.required))
     }
@@ -52,16 +64,6 @@ export class OtpUiComponent implements OnInit {
   sublogin() {
     this.otpSent.emit(this.loginForm.value)
   }
-  changeBackground(): string {
-    return this.color;
-}
-changeWidth():string{
-return this.width;
-}
-changeBgColor(){
-  return this.bg_color;
-}
-changeColor(){
-return this.txt_color;
-}
+
+ 
 }
