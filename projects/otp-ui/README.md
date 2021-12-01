@@ -34,7 +34,7 @@ imports: [
 ## Output Parameters
  `otpSent: object => Returns Entered values in `object` format`
 
-#### `{crtl0: '9', crtl1: '9', crtl2: '9', crtl3: '9', crtl4: '9'}`
+#### `{crtl0: '7', crtl1: '9', crtl2: '9', crtl3: '5', crtl4: '9'}`
 
 ## Example usage
  `<lib-otp-ui [otp]="otp" (otpSent)="receiveOTP($event)"></lib-otp-ui>`
