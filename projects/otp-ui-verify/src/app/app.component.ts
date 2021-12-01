@@ -10,9 +10,9 @@ export class AppComponent {
     otp_title:'',
     otp_subtitle : 'OTP will be sent to your registered mobile number, Please verify',
     buttonText : 'Validate OTP',
-    length : '5',
+    length : 5,
     styles :{
-      cardWidth:'',
+      cardWidth:"50%",
       backgroundColor:'',
       buttonColor:'',
       buttonTextColor:'',
